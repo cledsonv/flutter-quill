@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Italian (`it`).
 class FlutterQuillLocalizationsIt extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsIt([super.locale = 'it']);
+  FlutterQuillLocalizationsIt([String locale = 'it']) : super(locale);
 
   @override
   String get pasteLink => 'Incolla un collegamento';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsIt extends FlutterQuillLocalizations {
   String get alignRight => 'Allinea a destra';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Giustifica per larghezza finestra';
 
   @override
@@ -206,13 +211,16 @@ class FlutterQuillLocalizationsIt extends FlutterQuillLocalizations {
   String get color => 'Colore';
 
   @override
+  String get lineheight => 'Altezza della linea';
+
+  @override
   String get findText => 'Trova testo';
 
   @override
-  String get moveToPreviousOccurrence => "Vai all'occorrenza precedente";
+  String get moveToPreviousOccurrence => 'Vai all\'occorrenza precedente';
 
   @override
-  String get moveToNextOccurrence => "Vai all'occorrenza successiva";
+  String get moveToNextOccurrence => 'Vai all\'occorrenza successiva';
 
   @override
   String get savedUsingTheNetwork => 'Salvato utilizzando la rete';
@@ -228,15 +236,15 @@ class FlutterQuillLocalizationsIt extends FlutterQuillLocalizations {
 
   @override
   String get errorWhileSavingImage =>
-      "Errore durante il salvataggio dell'immagine";
+      'Errore durante il salvataggio dell\'immagine';
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Inserisci un testo per il tuo link (ad esempio, 'Per saperne di più')";
+      'Inserisci un testo per il tuo link (ad esempio, \'Per saperne di più\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Inserisci l'URL del link (ad esempio, 'https://example.com')";
+      'Inserisci l\'URL del link (ad esempio, \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL => 'Inserisci un URL di immagine valido';
@@ -292,4 +300,7 @@ class FlutterQuillLocalizationsIt extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

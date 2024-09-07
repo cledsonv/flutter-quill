@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Romanian Moldavian Moldovan (`ro`).
 class FlutterQuillLocalizationsRo extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsRo([super.locale = 'ro']);
+  FlutterQuillLocalizationsRo([String locale = 'ro']) : super(locale);
 
   @override
   String get pasteLink => 'Lipește un link';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsRo extends FlutterQuillLocalizations {
   String get alignRight => 'Aliniază la dreapta';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Justifică lățimea ferestrei';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsRo extends FlutterQuillLocalizations {
   String get color => 'Culoare';
 
   @override
+  String get lineheight => 'Inaltimea liniei';
+
+  @override
   String get findText => 'Găsește text';
 
   @override
@@ -230,11 +238,11 @@ class FlutterQuillLocalizationsRo extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Vă rugăm să introduceți un text pentru link-ul dvs. (de exemplu, 'Aflați mai multe')";
+      'Vă rugăm să introduceți un text pentru link-ul dvs. (de exemplu, \'Aflați mai multe\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Vă rugăm să introduceți URL-ul link-ului (de exemplu, 'https://example.com')";
+      'Vă rugăm să introduceți URL-ul link-ului (de exemplu, \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL =>
@@ -293,6 +301,9 @@ class FlutterQuillLocalizationsRo extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }
 
 /// The translations for Romanian Moldavian Moldovan, as used in Romania (`ro_RO`).
@@ -501,6 +512,9 @@ class FlutterQuillLocalizationsRoRo extends FlutterQuillLocalizationsRo {
   String get color => 'Culoare';
 
   @override
+  String get lineheight => 'Inaltimea liniei';
+
+  @override
   String get findText => 'Găsește text';
 
   @override
@@ -520,11 +534,11 @@ class FlutterQuillLocalizationsRoRo extends FlutterQuillLocalizationsRo {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Vă rugăm să introduceți un text pentru link-ul dvs. (de exemplu, 'Aflați mai multe')";
+      'Vă rugăm să introduceți un text pentru link-ul dvs. (de exemplu, \'Aflați mai multe\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Vă rugăm să introduceți URL-ul link-ului (de exemplu, 'https://example.com')";
+      'Vă rugăm să introduceți URL-ul link-ului (de exemplu, \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL =>

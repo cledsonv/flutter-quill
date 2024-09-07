@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Nepali (`ne`).
 class FlutterQuillLocalizationsNe extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsNe([super.locale = 'ne']);
+  FlutterQuillLocalizationsNe([String locale = 'ne']) : super(locale);
 
   @override
   String get pasteLink => 'लिङ्क पेस्ट गर्नुहोस्';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsNe extends FlutterQuillLocalizations {
   String get alignRight => 'दायाँ पङ्क्तिबद्ध';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'जस्टीफ़ी विन चौड़ाई';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsNe extends FlutterQuillLocalizations {
   String get color => 'रङ';
 
   @override
+  String get lineheight => 'रेखा-उचाइ';
+
+  @override
   String get findText => 'टेक्स्ट फेला पार्नुहोस्';
 
   @override
@@ -230,11 +238,11 @@ class FlutterQuillLocalizationsNe extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "कृपया आफ्नो लिङ्कको लागि पाठ प्रविष्ट गर्नुहोस् (जस्तै, 'थप जान्नुहोस्')";
+      'कृपया आफ्नो लिङ्कको लागि पाठ प्रविष्ट गर्नुहोस् (जस्तै, \'थप जान्नुहोस्\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "कृपया लिङ्क URL प्रविष्ट गर्नुहोस् (जस्तै, 'https://example.com')";
+      'कृपया लिङ्क URL प्रविष्ट गर्नुहोस् (जस्तै, \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL =>
@@ -294,4 +302,7 @@ class FlutterQuillLocalizationsNe extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

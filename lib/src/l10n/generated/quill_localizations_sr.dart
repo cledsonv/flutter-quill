@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Serbian (`sr`).
 class FlutterQuillLocalizationsSr extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsSr([super.locale = 'sr']);
+  FlutterQuillLocalizationsSr([String locale = 'sr']) : super(locale);
 
   @override
   String get pasteLink => 'Nalepi vezu';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsSr extends FlutterQuillLocalizations {
   String get alignRight => 'Poravnanje desno';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Centriraj širinu prozora';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsSr extends FlutterQuillLocalizations {
   String get color => 'Boja';
 
   @override
+  String get lineheight => 'Visina linije';
+
+  @override
   String get findText => 'Nađi tekst';
 
   @override
@@ -231,11 +239,11 @@ class FlutterQuillLocalizationsSr extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Unesite tekst za svoj link (na primer, 'Saznajte više')";
+      'Unesite tekst za svoj link (na primer, \'Saznajte više\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Unesite URL linka (na primer, 'https://example.com')";
+      'Unesite URL linka (na primer, \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL => 'Unesite važeći URL slike';
@@ -291,4 +299,7 @@ class FlutterQuillLocalizationsSr extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

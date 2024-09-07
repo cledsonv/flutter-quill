@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Persian (`fa`).
 class FlutterQuillLocalizationsFa extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsFa([super.locale = 'fa']);
+  FlutterQuillLocalizationsFa([String locale = 'fa']) : super(locale);
 
   @override
   String get pasteLink => 'جایگذاری لینک';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsFa extends FlutterQuillLocalizations {
   String get alignRight => 'چیدمان راست';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'تضمین عرض پنجره';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsFa extends FlutterQuillLocalizations {
   String get color => 'رنگ';
 
   @override
+  String get lineheight => 'ارتفاع خط';
+
+  @override
   String get findText => 'جستجوی متن';
 
   @override
@@ -231,11 +239,11 @@ class FlutterQuillLocalizationsFa extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "لطفاً متن لینک خود را وارد کنید (مثال: 'بیشتر بدانید')";
+      'لطفاً متن لینک خود را وارد کنید (مثال: \'بیشتر بدانید\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "لطفاً URL لینک را وارد کنید (مثال: 'https://example.com')";
+      'لطفاً URL لینک را وارد کنید (مثال: \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL => 'لطفاً یک URL تصویر معتبر وارد کنید';
@@ -291,4 +299,7 @@ class FlutterQuillLocalizationsFa extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

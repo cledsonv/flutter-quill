@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Swedish (`sv`).
 class FlutterQuillLocalizationsSv extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsSv([super.locale = 'sv']);
+  FlutterQuillLocalizationsSv([String locale = 'sv']) : super(locale);
 
   @override
   String get pasteLink => 'Klistra in länk';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsSv extends FlutterQuillLocalizations {
   String get alignRight => 'Högerjustera';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Justera till fönsterbredd';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsSv extends FlutterQuillLocalizations {
   String get color => 'Färg';
 
   @override
+  String get lineheight => 'Radavstånd';
+
+  @override
   String get findText => 'Hitta text';
 
   @override
@@ -230,11 +238,11 @@ class FlutterQuillLocalizationsSv extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Ange text för din länk (t.ex. 'Lär dig mer')";
+      'Ange text för din länk (t.ex. \'Lär dig mer\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Ange URL för länken (t.ex. 'https://example.com')";
+      'Ange URL för länken (t.ex. \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL => 'Ange en giltig bild-URL';
@@ -290,4 +298,7 @@ class FlutterQuillLocalizationsSv extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

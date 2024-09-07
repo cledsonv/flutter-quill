@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Japanese (`ja`).
 class FlutterQuillLocalizationsJa extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsJa([super.locale = 'ja']);
+  FlutterQuillLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
   String get pasteLink => 'リンクをペースト';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsJa extends FlutterQuillLocalizations {
   String get alignRight => '右揃え';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => '両端揃え';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsJa extends FlutterQuillLocalizations {
   String get color => 'Color';
 
   @override
+  String get lineheight => '行の高さ';
+
+  @override
   String get findText => '検索テキスト';
 
   @override
@@ -229,10 +237,10 @@ class FlutterQuillLocalizationsJa extends FlutterQuillLocalizations {
   String get errorWhileSavingImage => '画像の保存中にエラーが発生しました';
 
   @override
-  String get pleaseEnterTextForYourLink => "例: 'Learn more'";
+  String get pleaseEnterTextForYourLink => '例: \'Learn more\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "例: 'https://example.com'";
+  String get pleaseEnterTheLinkURL => '例: \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL => '有効な画像URLを入力してください';
@@ -287,4 +295,7 @@ class FlutterQuillLocalizationsJa extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

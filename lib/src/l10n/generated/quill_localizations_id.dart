@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Indonesian (`id`).
 class FlutterQuillLocalizationsId extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsId([super.locale = 'id']);
+  FlutterQuillLocalizationsId([String locale = 'id']) : super(locale);
 
   @override
   String get pasteLink => 'Tempel tautan';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsId extends FlutterQuillLocalizations {
   String get alignRight => 'Rata Kanan';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Rata Kanan dan Kiri';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsId extends FlutterQuillLocalizations {
   String get color => 'Warna';
 
   @override
+  String get lineheight => 'Tinggi garis';
+
+  @override
   String get findText => 'Temukan Teks';
 
   @override
@@ -231,11 +239,11 @@ class FlutterQuillLocalizationsId extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Harap masukkan teks untuk tautan Anda (contoh: 'Pelajari lebih lanjut')";
+      'Harap masukkan teks untuk tautan Anda (contoh: \'Pelajari lebih lanjut\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Harap masukkan URL tautan (contoh: 'https://example.com')";
+      'Harap masukkan URL tautan (contoh: \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL =>
@@ -292,4 +300,7 @@ class FlutterQuillLocalizationsId extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

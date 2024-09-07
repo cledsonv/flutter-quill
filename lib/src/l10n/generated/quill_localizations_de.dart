@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for German (`de`).
 class FlutterQuillLocalizationsDe extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsDe([super.locale = 'de']);
+  FlutterQuillLocalizationsDe([String locale = 'de']) : super(locale);
 
   @override
   String get pasteLink => 'Link hinzufügen';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsDe extends FlutterQuillLocalizations {
   String get alignRight => 'Rechtsbündig ausrichten';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Blocksatz';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsDe extends FlutterQuillLocalizations {
   String get color => 'Farbe';
 
   @override
+  String get lineheight => 'Zeilenhöhe';
+
+  @override
   String get findText => 'Text suchen';
 
   @override
@@ -229,10 +237,10 @@ class FlutterQuillLocalizationsDe extends FlutterQuillLocalizations {
   String get errorWhileSavingImage => 'Fehler beim Speichern des Bildes';
 
   @override
-  String get pleaseEnterTextForYourLink => "z.B. 'Mehr erfahren'";
+  String get pleaseEnterTextForYourLink => 'z.B. \'Mehr erfahren\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "z.B. 'https://example.com'";
+  String get pleaseEnterTheLinkURL => 'z.B. \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL =>
@@ -294,4 +302,7 @@ class FlutterQuillLocalizationsDe extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

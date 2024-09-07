@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Polish (`pl`).
 class FlutterQuillLocalizationsPl extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsPl([super.locale = 'pl']);
+  FlutterQuillLocalizationsPl([String locale = 'pl']) : super(locale);
 
   @override
   String get pasteLink => 'Wklej link';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsPl extends FlutterQuillLocalizations {
   String get alignRight => 'Align right';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Justify win width';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsPl extends FlutterQuillLocalizations {
   String get color => 'Kolor';
 
   @override
+  String get lineheight => 'Wysokość linii';
+
+  @override
   String get findText => 'Find text';
 
   @override
@@ -229,10 +237,10 @@ class FlutterQuillLocalizationsPl extends FlutterQuillLocalizations {
   String get errorWhileSavingImage => 'Error while saving image';
 
   @override
-  String get pleaseEnterTextForYourLink => "e.g., 'Learn more'";
+  String get pleaseEnterTextForYourLink => 'e.g., \'Learn more\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "e.g., 'https://example.com'";
+  String get pleaseEnterTheLinkURL => 'e.g., \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL => 'Please enter a valid image URL';
@@ -289,4 +297,7 @@ class FlutterQuillLocalizationsPl extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

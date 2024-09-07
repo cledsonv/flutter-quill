@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Czech (`cs`).
 class FlutterQuillLocalizationsCs extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsCs([super.locale = 'cs']);
+  FlutterQuillLocalizationsCs([String locale = 'cs']) : super(locale);
 
   @override
   String get pasteLink => 'Vložit odkaz';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsCs extends FlutterQuillLocalizations {
   String get alignRight => 'Zarovnat vpravo';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Zarovnat do bloku';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsCs extends FlutterQuillLocalizations {
   String get color => 'Barva';
 
   @override
+  String get lineheight => 'Výška čáry';
+
+  @override
   String get findText => 'Najít text';
 
   @override
@@ -230,11 +238,11 @@ class FlutterQuillLocalizationsCs extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Zadejte text pro váš odkaz (např., 'Dozvědět se více')";
+      'Zadejte text pro váš odkaz (např., \'Dozvědět se více\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Zadejte URL odkazu (např., 'https://example.com')";
+      'Zadejte URL odkazu (např., \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL => 'Zadejte platnou URL adresu obrázku';
@@ -290,4 +298,7 @@ class FlutterQuillLocalizationsCs extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

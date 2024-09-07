@@ -8,6 +8,7 @@ import 'package:intl/intl.dart' as intl;
 import 'quill_localizations_ar.dart';
 import 'quill_localizations_bg.dart';
 import 'quill_localizations_bn.dart';
+import 'quill_localizations_ca.dart';
 import 'quill_localizations_cs.dart';
 import 'quill_localizations_da.dart';
 import 'quill_localizations_de.dart';
@@ -34,12 +35,15 @@ import 'quill_localizations_sk.dart';
 import 'quill_localizations_sr.dart';
 import 'quill_localizations_sv.dart';
 import 'quill_localizations_sw.dart';
+import 'quill_localizations_th.dart';
 import 'quill_localizations_tk.dart';
 import 'quill_localizations_tr.dart';
 import 'quill_localizations_uk.dart';
 import 'quill_localizations_ur.dart';
 import 'quill_localizations_vi.dart';
 import 'quill_localizations_zh.dart';
+
+// ignore_for_file: type=lint
 
 /// Callers can lookup localized strings with an instance of FlutterQuillLocalizations
 /// returned by `FlutterQuillLocalizations.of(context)`.
@@ -129,6 +133,7 @@ abstract class FlutterQuillLocalizations {
     Locale('ar'),
     Locale('bg'),
     Locale('bn'),
+    Locale('ca'),
     Locale('cs'),
     Locale('da'),
     Locale('de'),
@@ -159,6 +164,7 @@ abstract class FlutterQuillLocalizations {
     Locale('sr'),
     Locale('sv'),
     Locale('sw'),
+    Locale('th'),
     Locale('tk'),
     Locale('tr'),
     Locale('uk'),
@@ -415,6 +421,12 @@ abstract class FlutterQuillLocalizations {
   /// **'Align right'**
   String get alignRight;
 
+  /// Justify the text over the full window width
+  ///
+  /// In en, this message translates to:
+  /// **'Align justify'**
+  String get alignJustify;
+
   /// No description provided for @justifyWinWidth.
   ///
   /// In en, this message translates to:
@@ -570,6 +582,12 @@ abstract class FlutterQuillLocalizations {
   /// In en, this message translates to:
   /// **'Color'**
   String get color;
+
+  /// No description provided for @lineheight.
+  ///
+  /// In en, this message translates to:
+  /// **'Line height'**
+  String get lineheight;
 
   /// No description provided for @findText.
   ///
@@ -732,6 +750,12 @@ abstract class FlutterQuillLocalizations {
   /// In en, this message translates to:
   /// **'Paste'**
   String get paste;
+
+  /// No description provided for @insertTable.
+  ///
+  /// In en, this message translates to:
+  /// **'Insert table'**
+  String get insertTable;
 }
 
 class _FlutterQuillLocalizationsDelegate
@@ -749,6 +773,7 @@ class _FlutterQuillLocalizationsDelegate
         'ar',
         'bg',
         'bn',
+        'ca',
         'cs',
         'da',
         'de',
@@ -775,6 +800,7 @@ class _FlutterQuillLocalizationsDelegate
         'sr',
         'sv',
         'sw',
+        'th',
         'tk',
         'tr',
         'uk',
@@ -842,6 +868,8 @@ FlutterQuillLocalizations lookupFlutterQuillLocalizations(Locale locale) {
       return FlutterQuillLocalizationsBg();
     case 'bn':
       return FlutterQuillLocalizationsBn();
+    case 'ca':
+      return FlutterQuillLocalizationsCa();
     case 'cs':
       return FlutterQuillLocalizationsCs();
     case 'da':
@@ -894,6 +922,8 @@ FlutterQuillLocalizations lookupFlutterQuillLocalizations(Locale locale) {
       return FlutterQuillLocalizationsSv();
     case 'sw':
       return FlutterQuillLocalizationsSw();
+    case 'th':
+      return FlutterQuillLocalizationsTh();
     case 'tk':
       return FlutterQuillLocalizationsTk();
     case 'tr':

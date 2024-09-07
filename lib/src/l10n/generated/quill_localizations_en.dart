@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for English (`en`).
 class FlutterQuillLocalizationsEn extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsEn([super.locale = 'en']);
+  FlutterQuillLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
   String get pasteLink => 'Paste a link';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsEn extends FlutterQuillLocalizations {
   String get alignRight => 'Align right';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Justify win width';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsEn extends FlutterQuillLocalizations {
   String get color => 'Color';
 
   @override
+  String get lineheight => 'Line height';
+
+  @override
   String get findText => 'Find text';
 
   @override
@@ -230,11 +238,11 @@ class FlutterQuillLocalizationsEn extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Please enter a text for your link (e.g., 'Learn more')";
+      'Please enter a text for your link (e.g., \'Learn more\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Please enter the link URL (e.g., 'https://example.com')";
+      'Please enter the link URL (e.g., \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL => 'Please enter a valid image URL';
@@ -290,6 +298,9 @@ class FlutterQuillLocalizationsEn extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }
 
 /// The translations for English, as used in the United States (`en_US`).
@@ -477,6 +488,9 @@ class FlutterQuillLocalizationsEnUs extends FlutterQuillLocalizationsEn {
   String get color => 'Color';
 
   @override
+  String get lineheight => 'Line height';
+
+  @override
   String get findText => 'Find text';
 
   @override
@@ -496,11 +510,11 @@ class FlutterQuillLocalizationsEnUs extends FlutterQuillLocalizationsEn {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Please enter a text for your link (e.g., 'Learn more')";
+      'Please enter a text for your link (e.g., \'Learn more\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Please enter the link URL (e.g., 'https://example.com')";
+      'Please enter the link URL (e.g., \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL => 'Please enter a valid image URL';

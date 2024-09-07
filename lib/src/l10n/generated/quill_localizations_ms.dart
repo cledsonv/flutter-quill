@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Malay (`ms`).
 class FlutterQuillLocalizationsMs extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsMs([super.locale = 'ms']);
+  FlutterQuillLocalizationsMs([String locale = 'ms']) : super(locale);
 
   @override
   String get pasteLink => 'Tampal Pautan';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsMs extends FlutterQuillLocalizations {
   String get alignRight => 'Align right';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Justify win width';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsMs extends FlutterQuillLocalizations {
   String get color => 'Warna';
 
   @override
+  String get lineheight => 'Ketinggian garisan';
+
+  @override
   String get findText => 'Find text';
 
   @override
@@ -230,11 +238,11 @@ class FlutterQuillLocalizationsMs extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Sila masukkan teks untuk pautan anda (contoh, 'Ketahui lebih lanjut')";
+      'Sila masukkan teks untuk pautan anda (contoh, \'Ketahui lebih lanjut\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Sila masukkan URL pautan (contoh, 'https://example.com')";
+      'Sila masukkan URL pautan (contoh, \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL => 'Sila masukkan URL imej yang sah';
@@ -290,4 +298,7 @@ class FlutterQuillLocalizationsMs extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

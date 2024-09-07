@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Bulgarian (`bg`).
 class FlutterQuillLocalizationsBg extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsBg([super.locale = 'bg']);
+  FlutterQuillLocalizationsBg([String locale = 'bg']) : super(locale);
 
   @override
   String get pasteLink => 'Поставете връзка';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsBg extends FlutterQuillLocalizations {
   String get alignRight => 'Подравни вдясно';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Подравни във всяка колонка';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsBg extends FlutterQuillLocalizations {
   String get color => 'Цвят';
 
   @override
+  String get lineheight => 'височина на линията';
+
+  @override
   String get findText => 'Намери текст';
 
   @override
@@ -229,10 +237,10 @@ class FlutterQuillLocalizationsBg extends FlutterQuillLocalizations {
   String get errorWhileSavingImage => 'Error while saving image';
 
   @override
-  String get pleaseEnterTextForYourLink => "Например, 'Научете повече'";
+  String get pleaseEnterTextForYourLink => 'Например, \'Научете повече\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "Например, 'https://example.com'";
+  String get pleaseEnterTheLinkURL => 'Например, \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL =>
@@ -290,4 +298,7 @@ class FlutterQuillLocalizationsBg extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

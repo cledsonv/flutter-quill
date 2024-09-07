@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Vietnamese (`vi`).
 class FlutterQuillLocalizationsVi extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsVi([super.locale = 'vi']);
+  FlutterQuillLocalizationsVi([String locale = 'vi']) : super(locale);
 
   @override
   String get pasteLink => 'Chèn liên kết';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsVi extends FlutterQuillLocalizations {
   String get alignRight => 'Căn phải';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Căn đều chiều rộng';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsVi extends FlutterQuillLocalizations {
   String get color => 'Màu';
 
   @override
+  String get lineheight => 'Chiều cao giữa các dòng';
+
+  @override
   String get findText => 'Tìm văn bản';
 
   @override
@@ -230,11 +238,11 @@ class FlutterQuillLocalizationsVi extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Vui lòng nhập văn bản cho liên kết của bạn (ví dụ: 'Tìm hiểu thêm')";
+      'Vui lòng nhập văn bản cho liên kết của bạn (ví dụ: \'Tìm hiểu thêm\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Vui lòng nhập URL của liên kết (ví dụ: 'https://example.com')";
+      'Vui lòng nhập URL của liên kết (ví dụ: \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL => 'Vui lòng nhập URL hình ảnh hợp lệ';
@@ -290,4 +298,7 @@ class FlutterQuillLocalizationsVi extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

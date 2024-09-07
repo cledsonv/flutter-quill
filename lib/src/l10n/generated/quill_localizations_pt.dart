@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Portuguese (`pt`).
 class FlutterQuillLocalizationsPt extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsPt([super.locale = 'pt']);
+  FlutterQuillLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
   String get pasteLink => 'Colar um link';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsPt extends FlutterQuillLocalizations {
   String get alignRight => 'Align right';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Justify win width';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsPt extends FlutterQuillLocalizations {
   String get color => 'Cor';
 
   @override
+  String get lineheight => 'Altura da linha';
+
+  @override
   String get findText => 'Find text';
 
   @override
@@ -230,10 +238,10 @@ class FlutterQuillLocalizationsPt extends FlutterQuillLocalizations {
   String get errorWhileSavingImage => 'Erro a gravar imagem';
 
   @override
-  String get pleaseEnterTextForYourLink => "e.g., 'Learn more'";
+  String get pleaseEnterTextForYourLink => 'e.g., \'Learn more\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "e.g., 'https://example.com'";
+  String get pleaseEnterTheLinkURL => 'e.g., \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL => 'Please enter a valid image URL';
@@ -290,6 +298,9 @@ class FlutterQuillLocalizationsPt extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -477,6 +488,9 @@ class FlutterQuillLocalizationsPtBr extends FlutterQuillLocalizationsPt {
   String get color => 'Cor';
 
   @override
+  String get lineheight => 'Altura da linha';
+
+  @override
   String get findText => 'Find text';
 
   @override
@@ -495,10 +509,10 @@ class FlutterQuillLocalizationsPtBr extends FlutterQuillLocalizationsPt {
   String get errorWhileSavingImage => 'Error while saving image';
 
   @override
-  String get pleaseEnterTextForYourLink => "e.g., 'Learn more'";
+  String get pleaseEnterTextForYourLink => 'e.g., \'Learn more\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "e.g., 'https://example.com'";
+  String get pleaseEnterTheLinkURL => 'e.g., \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL => 'Please enter a valid image URL';

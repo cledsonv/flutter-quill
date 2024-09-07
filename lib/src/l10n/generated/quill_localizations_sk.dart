@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Slovak (`sk`).
 class FlutterQuillLocalizationsSk extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsSk([super.locale = 'sk']);
+  FlutterQuillLocalizationsSk([String locale = 'sk']) : super(locale);
 
   @override
   String get pasteLink => 'Vložiť odkaz';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsSk extends FlutterQuillLocalizations {
   String get alignRight => 'Zarovnať vpravo';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Zarovnať na šírku okna';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsSk extends FlutterQuillLocalizations {
   String get color => 'Farba';
 
   @override
+  String get lineheight => 'Výška riadku';
+
+  @override
   String get findText => 'Nájsť text';
 
   @override
@@ -230,11 +238,11 @@ class FlutterQuillLocalizationsSk extends FlutterQuillLocalizations {
 
   @override
   String get pleaseEnterTextForYourLink =>
-      "Prosím zadajte text pre váš odkaz (napr. 'Ďalšie informácie')";
+      'Prosím zadajte text pre váš odkaz (napr. \'Ďalšie informácie\')';
 
   @override
   String get pleaseEnterTheLinkURL =>
-      "Prosím zadajte URL odkazu (napr. 'https://example.com')";
+      'Prosím zadajte URL odkazu (napr. \'https://example.com\')';
 
   @override
   String get pleaseEnterAValidImageURL =>
@@ -294,4 +302,7 @@ class FlutterQuillLocalizationsSk extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

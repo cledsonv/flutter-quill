@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Spanish Castilian (`es`).
 class FlutterQuillLocalizationsEs extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsEs([super.locale = 'es']);
+  FlutterQuillLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
   String get pasteLink => 'Pega un enlace';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsEs extends FlutterQuillLocalizations {
   String get alignRight => 'Alinear a la derecha';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Justificar';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsEs extends FlutterQuillLocalizations {
   String get color => 'Color';
 
   @override
+  String get lineheight => 'Interlineado';
+
+  @override
   String get findText => 'Buscar texto';
 
   @override
@@ -229,10 +237,10 @@ class FlutterQuillLocalizationsEs extends FlutterQuillLocalizations {
   String get errorWhileSavingImage => 'Error al guardar imagen';
 
   @override
-  String get pleaseEnterTextForYourLink => "p.ej., 'Aprende más'";
+  String get pleaseEnterTextForYourLink => 'p.ej., \'Aprende más\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "p.ej., 'https://example.com'";
+  String get pleaseEnterTheLinkURL => 'p.ej., \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL =>
@@ -290,4 +298,7 @@ class FlutterQuillLocalizationsEs extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

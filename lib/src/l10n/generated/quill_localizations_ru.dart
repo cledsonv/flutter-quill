@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Russian (`ru`).
 class FlutterQuillLocalizationsRu extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsRu([super.locale = 'ru']);
+  FlutterQuillLocalizationsRu([String locale = 'ru']) : super(locale);
 
   @override
   String get pasteLink => 'Вставить ссылку';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsRu extends FlutterQuillLocalizations {
   String get alignRight => 'Выровнять по правому краю';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Выровнять по ширине окна';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsRu extends FlutterQuillLocalizations {
   String get color => 'Цвет';
 
   @override
+  String get lineheight => 'Высота линии';
+
+  @override
   String get findText => 'Найти текст';
 
   @override
@@ -230,10 +238,10 @@ class FlutterQuillLocalizationsRu extends FlutterQuillLocalizations {
   String get errorWhileSavingImage => 'Ошибка при сохранении изображения';
 
   @override
-  String get pleaseEnterTextForYourLink => "например, 'Узнать больше'";
+  String get pleaseEnterTextForYourLink => 'например, \'Узнать больше\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "например, 'https://example.com'";
+  String get pleaseEnterTheLinkURL => 'например, \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL =>
@@ -293,4 +301,7 @@ class FlutterQuillLocalizationsRu extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

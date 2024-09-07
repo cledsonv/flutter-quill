@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Danish (`da`).
 class FlutterQuillLocalizationsDa extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsDa([super.locale = 'da']);
+  FlutterQuillLocalizationsDa([String locale = 'da']) : super(locale);
 
   @override
   String get pasteLink => 'Indsæt link';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsDa extends FlutterQuillLocalizations {
   String get alignRight => 'Align right';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Justify win width';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsDa extends FlutterQuillLocalizations {
   String get color => 'Farve';
 
   @override
+  String get lineheight => 'altezza della linea';
+
+  @override
   String get findText => 'Find text';
 
   @override
@@ -229,10 +237,10 @@ class FlutterQuillLocalizationsDa extends FlutterQuillLocalizations {
   String get errorWhileSavingImage => 'Error while saving image';
 
   @override
-  String get pleaseEnterTextForYourLink => "e.g., 'Learn more'";
+  String get pleaseEnterTextForYourLink => 'e.g., \'Learn more\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "e.g., 'https://example.com'";
+  String get pleaseEnterTheLinkURL => 'e.g., \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL => 'Please enter a valid image URL';
@@ -288,4 +296,7 @@ class FlutterQuillLocalizationsDa extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }

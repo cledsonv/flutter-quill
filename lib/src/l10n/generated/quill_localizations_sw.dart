@@ -1,8 +1,10 @@
 import 'quill_localizations.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Swahili (`sw`).
 class FlutterQuillLocalizationsSw extends FlutterQuillLocalizations {
-  FlutterQuillLocalizationsSw([super.locale = 'sw']);
+  FlutterQuillLocalizationsSw([String locale = 'sw']) : super(locale);
 
   @override
   String get pasteLink => 'Bandika Kiungo';
@@ -128,6 +130,9 @@ class FlutterQuillLocalizationsSw extends FlutterQuillLocalizations {
   String get alignRight => 'Pangilia Kulia';
 
   @override
+  String get alignJustify => 'Align justify';
+
+  @override
   String get justifyWinWidth => 'Kuhalalisha Upana wa Ushindi';
 
   @override
@@ -206,6 +211,9 @@ class FlutterQuillLocalizationsSw extends FlutterQuillLocalizations {
   String get color => 'Rangi';
 
   @override
+  String get lineheight => 'Urefu wa mstari';
+
+  @override
   String get findText => 'Pata Maandishi';
 
   @override
@@ -229,10 +237,10 @@ class FlutterQuillLocalizationsSw extends FlutterQuillLocalizations {
   String get errorWhileSavingImage => 'Hitilafu Wakati wa Kuhifadhi Picha';
 
   @override
-  String get pleaseEnterTextForYourLink => "Kwa mfano, 'Jifunze zaidi'";
+  String get pleaseEnterTextForYourLink => 'Kwa mfano, \'Jifunze zaidi\'';
 
   @override
-  String get pleaseEnterTheLinkURL => "Kwa mfano, 'https://example.com'";
+  String get pleaseEnterTheLinkURL => 'Kwa mfano, \'https://example.com\'';
 
   @override
   String get pleaseEnterAValidImageURL =>
@@ -289,4 +297,7 @@ class FlutterQuillLocalizationsSw extends FlutterQuillLocalizations {
 
   @override
   String get paste => 'Paste';
+
+  @override
+  String get insertTable => 'Insert table';
 }
